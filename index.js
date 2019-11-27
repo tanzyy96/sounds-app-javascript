@@ -20,7 +20,7 @@ window.addEventListener("load", () => {
     sounds[index].currentTime = 0;
     sounds[index].play();
 
-    createBubbles(index);
+    createBubble(index);
   });
 
   // Load sound
@@ -29,12 +29,12 @@ window.addEventListener("load", () => {
       sounds[index].currentTime = 0;
       sounds[index].play();
 
-      createBubbles(index);
+      createBubble(index);
     });
   });
 
   // Create bubbles
-  const createBubbles = index => {
+  const createBubble = index => {
     const bubbles = document.createElement("div");
     visual.appendChild(bubbles);
     bubbles.style.backgroundColor = colors[index];
